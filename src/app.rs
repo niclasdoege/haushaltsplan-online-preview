@@ -48,12 +48,12 @@ struct Model {
 #[derive(Clone, Routable, PartialEq)]
 enum Route {
     #[at("/")]
-    Home,
+    NotFound,
     #[at("/secure")]
     Secure,
     #[not_found]
     #[at("/404")]
-    NotFound,
+    Home,
 }
 
 
